@@ -8,6 +8,7 @@
 <body>
   <h1>Ferramenta de Mapeamento de Personalidade</h1>
   <p>Por Natanael Borges</p>
+
   <div id="email-section">
     <label for="emailInput">Digite seu e-mail para acessar a ferramenta:</label><br />
     <input type="email" id="emailInput" placeholder="seu@email.com" />
@@ -16,14 +17,34 @@
 
   <div id="formContainer" style="display:none;">
     <form id="formulario">
-      <!-- Exemplo reduzido: inserir perguntas reais aqui -->
       <fieldset>
         <legend>Extroversão × Introversão</legend>
-        <label><input type="checkbox" name="extro_virt" /> Faço amigos com facilidade</label><br />
+        <p><strong>Virtudes:</strong></p>
+        <label><input type="checkbox" name="extro_virt" /> Faço amigos com facilidade</label>
+        <label><input type="checkbox" name="extro_virt" /> Me expresso com naturalidade em público</label>
+        <label><input type="checkbox" name="extro_virt" /> Gosto de conhecer novas pessoas</label>
+        <label><input type="checkbox" name="extro_virt" /> Demonstro entusiasmo com frequência</label>
+        <label><input type="checkbox" name="extro_virt" /> Tenho facilidade para me adaptar em novos grupos</label>
+        <label><input type="checkbox" name="extro_virt" /> Falo com energia e confiança</label>
+        <label><input type="checkbox" name="extro_virt" /> Me envolvo com facilidade em atividades coletivas</label>
+        <label><input type="checkbox" name="extro_virt" /> Costumo iniciar conversas com desconhecidos</label>
+
+        <p><strong>Defeitos:</strong></p>
+        <label><input type="checkbox" name="extro_def" /> Me sinto inseguro em ambientes sociais</label>
         <label><input type="checkbox" name="extro_def" /> Prefiro evitar interações sociais</label>
+        <label><input type="checkbox" name="extro_def" /> Sinto dificuldade em manter conversas</label>
+        <label><input type="checkbox" name="extro_def" /> Costumo me calar mesmo tendo algo a dizer</label>
+        <label><input type="checkbox" name="extro_def" /> Me isolo mesmo quando preciso de apoio</label>
+        <label><input type="checkbox" name="extro_def" /> Evito ambientes com muitas pessoas</label>
+        <label><input type="checkbox" name="extro_def" /> Tenho medo de julgamento em público</label>
+        <label><input type="checkbox" name="extro_def" /> Tenho vergonha de me apresentar</label>
       </fieldset>
+
+      <!-- Os outros 4 blocos de traços seriam incluídos na mesma estrutura -->
+
       <button type="button" onclick="gerarResultado()">Gerar Resultado</button>
     </form>
+
     <div id="resultado" style="margin-top:20px;"></div>
     <button id="downloadPDF" style="display:none;">Baixar PDF</button>
   </div>
@@ -53,9 +74,9 @@
       let resultado = '';
 
       if (virtudes > defeitos) {
-        resultado = "Você apresenta mais características positivas associadas à extroversão.";
+        resultado = "Você demonstra traços positivos de extroversão.";
       } else if (defeitos > virtudes) {
-        resultado = "Você apresenta mais desafios associados à introversão.";
+        resultado = "Você apresenta desafios associados à introversão.";
       } else {
         resultado = "Você apresenta equilíbrio entre traços extrovertidos e introvertidos.";
       }
@@ -65,9 +86,9 @@
     }
 
     document.getElementById("downloadPDF").onclick = function () {
-      const { jsPDF } = window.jspdf || window.jspdf || {};
+      const { jsPDF } = window.jspdf || {};
       if (!jsPDF) {
-        alert("PDF não pôde ser gerado. Biblioteca jsPDF não encontrada.");
+        alert("Biblioteca de PDF não carregada.");
         return;
       }
       const doc = new jsPDF();
