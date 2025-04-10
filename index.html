@@ -3,60 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mapeamento de Personalidade - Natanael Borges</title>
+  <title>Ferramenta de Mapeamento de Personalidade - Natanael Borges</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
-    h1 { color: #444; text-align: center; }
-    fieldset { margin-bottom: 20px; border: 1px solid #ccc; padding: 10px; }
-    legend { font-weight: bold; }
-    .result { background: #f0f8ff; padding: 15px; border-radius: 8px; margin-top: 20px; }
-    .btn { background-color: #0057b8; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px; }
-    .btn:hover { background-color: #004599; }
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 850px; margin: auto; background-color: #f9f9f9; }
+    h1, h2, h3 { text-align: center; color: #222; }
+    fieldset { margin-bottom: 25px; border: 1px solid #ccc; padding: 15px; background-color: #fff; border-radius: 8px; }
+    legend { font-weight: bold; padding: 0 10px; }
+    .result { background: #f0f8ff; padding: 15px; border-radius: 8px; margin-top: 30px; }
+    .btn { background-color: #800000; color: white; border: none; padding: 12px 18px; cursor: pointer; border-radius: 6px; font-size: 16px; }
+    .btn:hover { background-color: #5a0000; }
+    label { display: block; margin-bottom: 5px; }
+    img.logo { display: block; margin: 0 auto 20px auto; max-width: 160px; }
   </style>
 </head>
 <body>
-  <h1>Mapeamento de Personalidade</h1>
+  <img src="Logo_Natan-removebg-preview.png" alt="Logo Natanael Borges" class="logo">
+  <h1>Ferramenta de Mapeamento de Personalidade</h1>
+  <h2>Autoconhecimento: O Caminho da Liberdade</h2>
   <p style="text-align:center; font-style:italic;">Por Natanael Borges</p>
 
   <form id="formulario">
     <fieldset>
       <legend>Extroversão × Introversão</legend>
-      <label><input type="checkbox" name="extro_virt"> Faço amigos com facilidade</label><br>
-      <label><input type="checkbox" name="extro_virt"> Me sinto confortável com desconhecidos</label><br>
-      <label><input type="checkbox" name="extro_def"> Falo alto demais</label><br>
-      <label><input type="checkbox" name="extro_def"> Meu círculo social é pequeno demais</label>
+      <label><input type="checkbox" name="extro_virt"> Faço amigos com facilidade</label>
+      <label><input type="checkbox" name="extro_virt"> Me sinto confortável com desconhecidos</label>
+      <label><input type="checkbox" name="extro_virt"> Costumo animar os ambientes</label>
+      <label><input type="checkbox" name="extro_def"> Falo alto demais</label>
+      <label><input type="checkbox" name="extro_def"> Me sinto desconfortável em grupos</label>
+      <label><input type="checkbox" name="extro_def"> Prefiro me isolar mesmo quando estou mal</label>
     </fieldset>
 
     <fieldset>
       <legend>Abertura × Tradicionalismo</legend>
-      <label><input type="checkbox" name="abert_virt"> Tenho vocabulário rico</label><br>
-      <label><input type="checkbox" name="abert_virt"> Estou sempre aprendendo algo novo</label><br>
-      <label><input type="checkbox" name="abert_def"> Sempre faço as coisas do mesmo jeito</label><br>
+      <label><input type="checkbox" name="abert_virt"> Tenho vocabulário rico</label>
+      <label><input type="checkbox" name="abert_virt"> Estou sempre aprendendo algo novo</label>
+      <label><input type="checkbox" name="abert_virt"> Me adapto bem a novas ideias</label>
+      <label><input type="checkbox" name="abert_def"> Sempre faço as coisas do mesmo jeito</label>
       <label><input type="checkbox" name="abert_def"> Tenho dificuldade de focar</label>
+      <label><input type="checkbox" name="abert_def"> Me incomodo com mudanças</label>
     </fieldset>
 
     <fieldset>
       <legend>Amabilidade × Combatividade</legend>
-      <label><input type="checkbox" name="amab_virt"> Tenho um coração mole</label><br>
-      <label><input type="checkbox" name="amab_virt"> Trabalho bem em equipe</label><br>
-      <label><input type="checkbox" name="amab_def"> Sacrifico meus sentimentos pelo outro</label><br>
+      <label><input type="checkbox" name="amab_virt"> Tenho um coração mole</label>
+      <label><input type="checkbox" name="amab_virt"> Trabalho bem em equipe</label>
+      <label><input type="checkbox" name="amab_virt"> Costumo ouvir antes de julgar</label>
+      <label><input type="checkbox" name="amab_def"> Sacrifico meus sentimentos pelo outro</label>
       <label><input type="checkbox" name="amab_def"> Tenho dificuldade de impor limites</label>
+      <label><input type="checkbox" name="amab_def"> Reajo com agressividade verbal</label>
     </fieldset>
 
     <fieldset>
       <legend>Conscienciosidade × Despreocupação</legend>
-      <label><input type="checkbox" name="cons_virt"> Faço o que me comprometo a fazer</label><br>
-      <label><input type="checkbox" name="cons_virt"> Não paro até tudo estar bem feito</label><br>
-      <label><input type="checkbox" name="cons_def"> Sou muito perfeccionista</label><br>
+      <label><input type="checkbox" name="cons_virt"> Faço o que me comprometo a fazer</label>
+      <label><input type="checkbox" name="cons_virt"> Não paro até tudo estar bem feito</label>
+      <label><input type="checkbox" name="cons_virt"> Tenho disciplina mesmo sem supervisão</label>
+      <label><input type="checkbox" name="cons_def"> Sou muito perfeccionista</label>
       <label><input type="checkbox" name="cons_def"> Procrastino com frequência</label>
+      <label><input type="checkbox" name="cons_def"> Deixo tarefas incompletas com frequência</label>
     </fieldset>
 
     <fieldset>
       <legend>Estabilidade Emocional × Neuroticismo</legend>
-      <label><input type="checkbox" name="emo_virt"> Sinto que tenho controle emocional</label><br>
-      <label><input type="checkbox" name="emo_virt"> Não me estresso com facilidade</label><br>
-      <label><input type="checkbox" name="emo_def"> Resmungo das coisas</label><br>
+      <label><input type="checkbox" name="emo_virt"> Sinto que tenho controle emocional</label>
+      <label><input type="checkbox" name="emo_virt"> Não me estresso com facilidade</label>
+      <label><input type="checkbox" name="emo_virt"> Reajo com calma a imprevistos</label>
+      <label><input type="checkbox" name="emo_def"> Resmungo das coisas</label>
       <label><input type="checkbox" name="emo_def"> Deixo o medo me paralisar</label>
+      <label><input type="checkbox" name="emo_def"> Me sinto frequentemente ansioso ou preocupado</label>
     </fieldset>
 
     <button type="button" class="btn" onclick="gerarResultado()">Gerar Resultado</button>
