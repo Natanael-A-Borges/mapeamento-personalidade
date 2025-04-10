@@ -5,96 +5,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mapeamento de Personalidade - Natanael Borges</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; background-color: #fdfdfd; }
+    h1, h2, h3 { text-align: center; color: #333; }
+    fieldset { margin-bottom: 30px; border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #fff; }
+    legend { font-weight: bold; font-size: 1.1em; }
+    label { display: block; margin: 6px 0; }
+    .btn { background-color: #800000; color: #fff; padding: 12px 18px; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; display: block; margin: 20px auto; }
+    .btn:hover { background-color: #5c0000; }
+    .result { background: #f4f4f4; padding: 20px; margin-top: 20px; border-radius: 6px; }
+    img.logo { display: block; margin: 0 auto 20px; max-width: 150px; }
+  </style>
 </head>
 <body>
-  <h1>Ferramenta de Mapeamento de Personalidade</h1>
-  <p>Por Natanael Borges</p>
+  <img src="Logo_Natan-removebg-preview.png" alt="Logo Natanael Borges" class="logo" />
+  <h1>Mapeamento de Personalidade</h1>
+  <h2>Autoconhecimento: O Caminho da Liberdade</h2>
+  <form id="formulario">
+<fieldset><legend>Extroversão × Introversão</legend>
+<p><strong>Virtudes:</strong></p>
+<label><input type="checkbox" name="extro_virt" /> Faço amigos com facilidade</label>
+<label><input type="checkbox" name="extro_virt" /> Gosto de interagir em grupo</label>
+<label><input type="checkbox" name="extro_virt" /> Me comunico com entusiasmo</label>
+<label><input type="checkbox" name="extro_virt" /> Sou expressivo e ativo</label>
+<label><input type="checkbox" name="extro_virt" /> Me adapto bem em novos ambientes</label>
+<label><input type="checkbox" name="extro_virt" /> Gosto de liderar interações</label>
+<label><input type="checkbox" name="extro_virt" /> Tenho energia social</label>
+<label><input type="checkbox" name="extro_virt" /> Costumo iniciar conversas</label>
+<label><input type="checkbox" name="extro_virt" /> Me sinto confortável com desconhecidos</label>
+<label><input type="checkbox" name="extro_virt" /> Me animo facilmente com pessoas</label>
+<p><strong>Defeitos:</strong></p>
+<label><input type="checkbox" name="extro_def" /> Evito contato social</label>
+<label><input type="checkbox" name="extro_def" /> Tenho dificuldade em me expressar</label>
+<label><input type="checkbox" name="extro_def" /> Me isolo mesmo em grupo</label>
+<label><input type="checkbox" name="extro_def" /> Sinto vergonha em ambientes sociais</label>
+<label><input type="checkbox" name="extro_def" /> Fico travado em interações</label>
+<label><input type="checkbox" name="extro_def" /> Tenho medo de falar em público</label>
+<label><input type="checkbox" name="extro_def" /> Me sinto desconfortável em festas</label>
+<label><input type="checkbox" name="extro_def" /> Me calo por insegurança</label>
+<label><input type="checkbox" name="extro_def" /> Prefiro sempre o silêncio</label>
+<label><input type="checkbox" name="extro_def" /> Me sinto invisível em grupo</label>
+</fieldset>
+<fieldset><legend>Abertura × Tradicionalismo</legend>
+<p><strong>Virtudes:</strong></p>
+<label><input type="checkbox" name="abert_virt" /> Sou curioso por novas ideias</label>
+<label><input type="checkbox" name="abert_virt" /> Gosto de aprender coisas diferentes</label>
+<label><input type="checkbox" name="abert_virt" /> Sou criativo no dia a dia</label>
+<label><input type="checkbox" name="abert_virt" /> Tenho facilidade em pensar fora da caixa</label>
+<label><input type="checkbox" name="abert_virt" /> Aprecio arte e cultura</label>
+<label><input type="checkbox" name="abert_virt" /> Sou aberto a novas experiências</label>
+<label><input type="checkbox" name="abert_virt" /> Gosto de explorar o desconhecido</label>
+<label><input type="checkbox" name="abert_virt" /> Me interesso por filosofia ou ciência</label>
+<label><input type="checkbox" name="abert_virt" /> Tenho repertório diversificado</label>
+<label><input type="checkbox" name="abert_virt" /> Adapto-me bem a mudanças</label>
+<p><strong>Defeitos:</strong></p>
+<label><input type="checkbox" name="abert_def" /> Tenho dificuldade com mudanças</label>
+<label><input type="checkbox" name="abert_def" /> Prefiro sempre fazer do meu jeito</label>
+<label><input type="checkbox" name="abert_def" /> Resisto a novidades</label>
+<label><input type="checkbox" name="abert_def" /> Tenho pouco interesse em arte ou cultura</label>
+<label><input type="checkbox" name="abert_def" /> Fico desconfortável com inovações</label>
+<label><input type="checkbox" name="abert_def" /> Evito sair da rotina</label>
+<label><input type="checkbox" name="abert_def" /> Sou rígido com regras e métodos</label>
+<label><input type="checkbox" name="abert_def" /> Tenho dificuldade em lidar com o imprevisível</label>
+<label><input type="checkbox" name="abert_def" /> Rejeito ideias que desafiam minha visão</label>
+<label><input type="checkbox" name="abert_def" /> Prefiro o que é familiar</label>
+</fieldset>
+<fieldset><legend>Amabilidade × Combatividade</legend>
+<p><strong>Virtudes:</strong></p>
+<label><input type="checkbox" name="amab_virt" /> Sou gentil e educado</label>
+<label><input type="checkbox" name="amab_virt" /> Gosto de ajudar as pessoas</label>
+<label><input type="checkbox" name="amab_virt" /> Tenho empatia com os outros</label>
+<label><input type="checkbox" name="amab_virt" /> Evito conflitos desnecessários</label>
+<label><input type="checkbox" name="amab_virt" /> Escuto com atenção</label>
+<label><input type="checkbox" name="amab_virt" /> Sou compreensivo</label>
+<label><input type="checkbox" name="amab_virt" /> Demonstro carinho com facilidade</label>
+<label><input type="checkbox" name="amab_virt" /> Tenho paciência com os outros</label>
+<label><input type="checkbox" name="amab_virt" /> Perdoo com facilidade</label>
+<label><input type="checkbox" name="amab_virt" /> Colaboro em equipe</label>
+<p><strong>Defeitos:</strong></p>
+<label><input type="checkbox" name="amab_def" /> Evito dizer o que penso para não magoar</label>
+<label><input type="checkbox" name="amab_def" /> Tenho dificuldade em impor limites</label>
+<label><input type="checkbox" name="amab_def" /> Acumulo ressentimentos em silêncio</label>
+<label><input type="checkbox" name="amab_def" /> Me deixo levar pelos outros</label>
+<label><input type="checkbox" name="amab_def" /> Sou passivo em discussões</label>
+<label><input type="checkbox" name="amab_def" /> Cedo facilmente para evitar conflitos</label>
+<label><input type="checkbox" name="amab_def" /> Me culpo mesmo quando não sou responsável</label>
+<label><input type="checkbox" name="amab_def" /> Sou crítico e duro com os outros</label>
+<label><input type="checkbox" name="amab_def" /> Reajo com agressividade verbal</label>
+<label><input type="checkbox" name="amab_def" /> Tenho dificuldade em aceitar opiniões diferentes</label>
+</fieldset>
+<fieldset><legend>Conscienciosidade × Despreocupação</legend>
+<p><strong>Virtudes:</strong></p>
+<label><input type="checkbox" name="cons_virt" /> Cumpro prazos com responsabilidade</label>
+<label><input type="checkbox" name="cons_virt" /> Sou organizado com minhas tarefas</label>
+<label><input type="checkbox" name="cons_virt" /> Tenho disciplina pessoal</label>
+<label><input type="checkbox" name="cons_virt" /> Me concentro no que precisa ser feito</label>
+<label><input type="checkbox" name="cons_virt" /> Faço planos realistas</label>
+<label><input type="checkbox" name="cons_virt" /> Me comprometo com meus objetivos</label>
+<label><input type="checkbox" name="cons_virt" /> Evito deixar tarefas pela metade</label>
+<label><input type="checkbox" name="cons_virt" /> Tenho autocontrole</label>
+<label><input type="checkbox" name="cons_virt" /> Busco eficiência no que faço</label>
+<label><input type="checkbox" name="cons_virt" /> Trabalho com dedicação</label>
+<p><strong>Defeitos:</strong></p>
+<label><input type="checkbox" name="cons_def" /> Procrastino com frequência</label>
+<label><input type="checkbox" name="cons_def" /> Sou desorganizado</label>
+<label><input type="checkbox" name="cons_def" /> Tenho dificuldade em seguir rotinas</label>
+<label><input type="checkbox" name="cons_def" /> Me distraio com facilidade</label>
+<label><input type="checkbox" name="cons_def" /> Desisto com facilidade</label>
+<label><input type="checkbox" name="cons_def" /> Tendo a atrasar compromissos</label>
+<label><input type="checkbox" name="cons_def" /> Tenho dificuldade em concluir o que começo</label>
+<label><input type="checkbox" name="cons_def" /> Sou impulsivo em decisões</label>
+<label><input type="checkbox" name="cons_def" /> Tenho resistência a planejamento</label>
+<label><input type="checkbox" name="cons_def" /> Perco o foco facilmente</label>
+</fieldset>
+<fieldset><legend>Estabilidade Emocional × Neuroticismo</legend>
+<p><strong>Virtudes:</strong></p>
+<label><input type="checkbox" name="emo_virt" /> Tenho equilíbrio emocional</label>
+<label><input type="checkbox" name="emo_virt" /> Mantenho a calma sob pressão</label>
+<label><input type="checkbox" name="emo_virt" /> Lido bem com frustrações</label>
+<label><input type="checkbox" name="emo_virt" /> Tenho controle sobre minhas reações</label>
+<label><input type="checkbox" name="emo_virt" /> Costumo ver o lado positivo das coisas</label>
+<label><input type="checkbox" name="emo_virt" /> Reflito antes de reagir</label>
+<label><input type="checkbox" name="emo_virt" /> Sou estável emocionalmente</label>
+<label><input type="checkbox" name="emo_virt" /> Consigo me recuperar de situações difíceis</label>
+<label><input type="checkbox" name="emo_virt" /> Tenho autoestima consistente</label>
+<label><input type="checkbox" name="emo_virt" /> Sei lidar com críticas</label>
+<p><strong>Defeitos:</strong></p>
+<label><input type="checkbox" name="emo_def" /> Me estresso com facilidade</label>
+<label><input type="checkbox" name="emo_def" /> Reajo impulsivamente</label>
+<label><input type="checkbox" name="emo_def" /> Fico ansioso com frequência</label>
+<label><input type="checkbox" name="emo_def" /> Tenho pensamentos negativos recorrentes</label>
+<label><input type="checkbox" name="emo_def" /> Me sinto inseguro constantemente</label>
+<label><input type="checkbox" name="emo_def" /> Levo tudo para o lado pessoal</label>
+<label><input type="checkbox" name="emo_def" /> Tenho crises de raiva ou tristeza</label>
+<label><input type="checkbox" name="emo_def" /> Tenho baixa autoestima</label>
+<label><input type="checkbox" name="emo_def" /> Me sinto instável emocionalmente</label>
+<label><input type="checkbox" name="emo_def" /> Sofro com excesso de preocupação</label>
+</fieldset>
 
-  <div id="email-section">
-    <label for="emailInput">Digite seu e-mail para acessar a ferramenta:</label><br />
-    <input type="email" id="emailInput" placeholder="seu@email.com" />
-    <button onclick="liberarFormulario()">Acessar</button>
-  </div>
+    <button type="button" class="btn" onclick="gerarResultado()">Gerar Resultado</button>
+  </form>
+  <div id="resultado" class="result" style="display:none;"></div>
+  <button class="btn" id="downloadPDF" style="display:none;">Baixar PDF</button>
 
-  <div id="formContainer" style="display:none;">
-    <form id="formulario">
-      <!-- Blocos dos 5 traços completos -->
-      <fieldset>
-        <legend>Extroversão × Introversão</legend>
-        <p><strong>Virtudes:</strong></p>
-        <label><input type="checkbox" name="extro_virt" /> Faço amigos com facilidade</label>
-        <label><input type="checkbox" name="extro_virt" /> Gosto de interagir em grupo</label>
-        <label><input type="checkbox" name="extro_virt" /> Me comunico com entusiasmo</label>
-        <label><input type="checkbox" name="extro_virt" /> Sou expressivo e ativo</label>
-        <label><input type="checkbox" name="extro_virt" /> Me adapto bem em novos ambientes</label>
-        <label><input type="checkbox" name="extro_virt" /> Gosto de liderar interações</label>
-        <label><input type="checkbox" name="extro_virt" /> Tenho energia social</label>
-        <label><input type="checkbox" name="extro_virt" /> Costumo iniciar conversas</label>
-        <label><input type="checkbox" name="extro_virt" /> Me sinto confortável com desconhecidos</label>
-        <label><input type="checkbox" name="extro_virt" /> Me animo facilmente com pessoas</label>
-
-        <p><strong>Defeitos:</strong></p>
-        <label><input type="checkbox" name="extro_def" /> Evito contato social</label>
-        <label><input type="checkbox" name="extro_def" /> Tenho dificuldade em me expressar</label>
-        <label><input type="checkbox" name="extro_def" /> Me isolo mesmo em grupo</label>
-        <label><input type="checkbox" name="extro_def" /> Sinto vergonha em ambientes sociais</label>
-        <label><input type="checkbox" name="extro_def" /> Fico travado em interações</label>
-        <label><input type="checkbox" name="extro_def" /> Tenho medo de falar em público</label>
-        <label><input type="checkbox" name="extro_def" /> Me sinto desconfortável em festas</label>
-        <label><input type="checkbox" name="extro_def" /> Me calo por insegurança</label>
-        <label><input type="checkbox" name="extro_def" /> Prefiro sempre o silêncio</label>
-        <label><input type="checkbox" name="extro_def" /> Me sinto invisível em grupo</label>
-      </fieldset>
-      <!-- Repetir o modelo acima para os outros 4 blocos -->
-
-      <button type="button" onclick="gerarResultado()">Gerar Resultado</button>
-    </form>
-    <div id="resultado" style="margin-top:20px;"></div>
-    <button id="downloadPDF" style="display:none;">Baixar PDF</button>
-  </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("formContainer").style.display = "none";
-    });
-
-    function liberarFormulario() {
-      const email = document.getElementById("emailInput").value.trim();
-      if (!email || !email.includes("@") || !email.includes(".")) {
-        alert("Por favor, insira um e-mail válido.");
-        return;
-      }
-      document.getElementById("email-section").style.display = "none";
-      document.getElementById("formContainer").style.display = "block";
-    }
-
     function contar(nome) {
       return document.querySelectorAll(`input[name='${nome}']:checked`).length;
     }
 
     function gerarResultado() {
-      const virtudes = contar('extro_virt');
-      const defeitos = contar('extro_def');
-      let resultado = '';
-
-      if (virtudes > defeitos) {
-        resultado = "Você demonstra traços positivos de extroversão.";
-      } else if (defeitos > virtudes) {
-        resultado = "Você apresenta desafios associados à introversão.";
-      } else {
-        resultado = "Você apresenta equilíbrio entre traços extrovertidos e introvertidos.";
+      const virtudes = {
+        extro: contar('extro_virt'), abert: contar('abert_virt'),
+        amab: contar('amab_virt'), cons: contar('cons_virt'), emo: contar('emo_virt')
+      };
+      const defeitos = {
+        extro: contar('extro_def'), abert: contar('abert_def'),
+        amab: contar('amab_def'), cons: contar('cons_def'), emo: contar('emo_def')
+      };
+      const tracos = {
+        'Extroversão × Introversão': ['extro'],
+        'Abertura × Tradicionalismo': ['abert'],
+        'Amabilidade × Combatividade': ['amab'],
+        'Conscienciosidade × Despreocupação': ['cons'],
+        'Estabilidade Emocional × Neuroticismo': ['emo']
+      };
+      let resultado = "<h3>Resultado</h3>";
+      for (const [label, keys] of Object.entries(tracos)) {
+        const key = keys[0];
+        resultado += `<h4>${label}</h4>`;
+        if (virtudes[key] > defeitos[key]) {
+          resultado += `<p><strong>Predominância positiva.</strong> Você apresenta mais virtudes associadas a esse traço.</p>`;
+        } else if (defeitos[key] > virtudes[key]) {
+          resultado += `<p><strong>Traço em desequilíbrio.</strong> Você marcou mais desafios nesse aspecto.</p>`;
+        } else {
+          resultado += `<p><strong>Traço equilibrado.</strong> Virtudes e defeitos aparecem em proporção similar.</p>`;
+        }
       }
-
-      document.getElementById("resultado").innerText = resultado;
+      document.getElementById("resultado").innerHTML = resultado;
+      document.getElementById("resultado").style.display = "block";
       document.getElementById("downloadPDF").style.display = "inline-block";
     }
 
     document.getElementById("downloadPDF").onclick = function () {
-      const { jsPDF } = window.jspdf || {};
-      if (!jsPDF) {
-        alert("Biblioteca de PDF não carregada.");
-        return;
-      }
+      const { jsPDF } = window.jspdf;
       const doc = new jsPDF();
       const content = document.getElementById("resultado").innerText;
       doc.text(content, 10, 10);
